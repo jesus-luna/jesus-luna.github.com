@@ -1,0 +1,174 @@
+/*
+rosa #A64472 
+azul #231559
+morado ligero #766BBF
+salmonsito #F26B6B
+negro #0D0D0D
+*/
+
+/*
+morado 6B2737
+carne 6B2737
+moztaza F28F3B
+roo EA2B1F
+cafe A33B20
+*/
+@font-face{
+  font-family: neu;
+  src: url(../fonts/Comic_Neue/ComicNeue-Regular.ttf);
+}
+
+@font-face{
+    font-family: neuBold;
+    src: url(../fonts/Comic_Neue/ComicNeue-Bold.ttf);
+
+}
+
+@font-face{
+    font-family: neuLight;
+    src: url(../fonts/Comic_Neue/ComicNeue-Light.ttf);
+
+}
+
+@font-face{
+    font-family: neuLightItalic;
+    src: url(../fonts/Comic_Neue/ComicNeue-LightItalic.ttf);
+
+}
+
+
+@font-face{
+    font-family: indie;
+    src: url(../fonts/Indie_Flower/IndieFlower-Regular.ttf);
+
+}
+
+
+.casual{
+    font-family: indie;
+}
+
+.title{
+    font-size: 50px;
+    border-bottom: solid #F26B6B 5px;
+    padding-bottom: 10px;
+    text-align: center;
+
+}
+
+.title2{
+    font-family: neuBold;
+    /*
+    border-bottom-style: solid;
+    border-color: #F26B6B;
+    border-width: 5px;
+    */
+    border-bottom: solid #F26B6B 5px;
+    padding-bottom: 1em;
+    font-size: 2em;
+}
+
+.address{
+    font-weight: bold;
+    color: #766BBF;
+    font-family: neuLight;
+    font-size: .8em;
+}
+
+.position{
+    background-color: #F26B6B;
+    color:white;
+    padding: 10px;
+    border-radius:10px;
+    font-size: 1.2em;
+}
+
+
+.paragraph{
+    font-family: neuLight;
+    line-height: 1.5em;
+    font-weight: 400;
+}
+
+.restaurant-image{
+    height: 300px;
+    float: left;
+    margin-right: 1em;
+}
+
+
+a{
+    font-family: neu;
+    text-decoration: none;
+    color: #6B2737;
+}
+
+a:hover{
+    color: #F26B6B;
+}
+
+.container{
+    background: #A64472;
+    background: -webkit-linear-gradient(to bottom, #4B1248, #F0C27B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #4B1248, #F0C27B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    max-width: 960px;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 2em;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0, .16), 0 3px 6px rgba(0,0,0, .23);
+    padding: 1.8em;
+}
+
+.text{
+    text-align: justify;
+}
+
+.actions{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.close{
+    background-color: #766BBF;
+    width: 30px;
+    height: 30px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 3px 6px rgba(0,0,0, .16), 0 3px 6px rgba(0,0,0, .23);
+}
+
+.tabla{
+    width: 100%;
+    border-spacing: 0;
+
+}
+
+.tabla td, .tabla th{
+    padding: 1em;
+    text-align: left;
+}
+.tabla tr:nth-child(even){
+    background-color:#A64472 ;
+}
+
+.fa-star, .fa-star-half{
+    color: #ffc400;
+}
+
+
+
