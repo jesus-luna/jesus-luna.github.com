@@ -1,5 +1,5 @@
 /*
-rosa #A64472 
+rosa #A64472
 azul #231559
 morado ligero #766BBF
 salmonsito #F26B6B
@@ -79,7 +79,7 @@ img{
     font-size: .8em;
 
     /*Si el display es inline, no respeta margin
-    Por eso en la resolucion para pantallas mas grande se pone 
+    Por eso en la resolucion para pantallas mas grande se pone
     display:inline y automaticamente no se tomara en cuenta este mmargin*/
     display: inline-block;
     margin-top: 2em;
@@ -204,7 +204,7 @@ th{
 
 
 @media(min-width:900px){ /*Pantallas mas altas*/
-    
+
     th{
         display: table-cell;
     }
@@ -225,7 +225,7 @@ th{
 
     .address{
         display: inline;
-    }  
+    }
 }
 
 @media (min-height:550px){ /*Pantallas mas chicas*/
@@ -233,5 +233,3 @@ th{
         height: 500px;
     }
 }
-
-
