@@ -1,5 +1,5 @@
 /*
-rosa #A64472
+rosa #A64472 
 azul #231559
 morado ligero #766BBF
 salmonsito #F26B6B
@@ -79,7 +79,7 @@ img{
     font-size: .8em;
 
     /*Si el display es inline, no respeta margin
-    Por eso en la resolucion para pantallas mas grande se pone
+    Por eso en la resolucion para pantallas mas grande se pone 
     display:inline y automaticamente no se tomara en cuenta este mmargin*/
     display: inline-block;
     margin-top: 2em;
@@ -129,14 +129,16 @@ a:hover{
 
 .content{
     max-width: 960px;
-    /*max-height: 500px;*/
+    /*max-height: 600px;*/
     width: 100%;
     height: 80vh;
     background-color: #fff;
     border-radius: 2em;
     position: relative;
     box-shadow: 0 3px 6px rgba(0,0,0, .16), 0 3px 6px rgba(0,0,0, .23);
-    overflow: scroll;
+    /*overflow: scroll;*/
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 /* Diseño para movil, posteriormente los media para mas grandes*/
@@ -204,7 +206,7 @@ th{
 
 
 @media(min-width:900px){ /*Pantallas mas altas*/
-
+    
     th{
         display: table-cell;
     }
@@ -225,7 +227,7 @@ th{
 
     .address{
         display: inline;
-    }
+    }  
 }
 
 @media (min-height:550px){ /*Pantallas mas chicas*/
@@ -233,3 +235,5 @@ th{
         height: 500px;
     }
 }
+
+
