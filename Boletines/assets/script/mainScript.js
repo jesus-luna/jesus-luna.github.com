@@ -16,7 +16,7 @@ filas.forEach((fila,id) => {
     console.log(fila.rowIndex);
     console.log(fila.cells[1]);
     fila.cells[1].innerText = "New Content";
-    
+
 })
 */
 
@@ -29,7 +29,7 @@ let celdas = document.querySelectorAll("td");
 celdas.forEach(function(celda) {
     celda.addEventListener('click',function(){
         console.log(this);
-    }); 
+    });
 });
 
 */
@@ -55,15 +55,15 @@ linksCerrar.forEach(function(linkC){
         //Se le quita la clase de aniamcion de entrada
         content.classList.remove("fadeInUp");
         content.classList.remove("animated");
-        
+
         //Añadir clase de animacion de salida
         content.classList.add("animated");
         content.classList.add("fadeOutUp");
 
         window.setTimeout((ruta)=>{
             location.href = ruta;
-        },500,"../index.html")
-        
+        },600,"../index.html")
+
     });
 });
 
@@ -86,14 +86,14 @@ linksRedir.forEach((linkR) =>{
         ruta = linkR.href;
         window.setTimeout(function(ruta){
             location.href = ruta;
-        },500,ruta);
+        },600,ruta);
     });
 });
 
 
 
 
- 
+
 //Obtener todos los elements i que son las estrellas
 let stars = document.querySelectorAll("table.tabla > tbody > tr > td > i");
 let indice = 0;
@@ -102,9 +102,9 @@ stars.forEach(function(star){
     //star.value = indice;
     //star.setAttribute("value","valor");
 //element.id es lo mismo que añadir el atributo "id"
-    //star.setAttribute("id","id"); 
+    //star.setAttribute("id","id");
     //star.id = indice;
- 
+
     star.id=indice;
     indice++;
     star.addEventListener('click',function(ev){
@@ -122,7 +122,7 @@ stars.forEach(function(star){
         //console.log(elemento);
         //console.log(indiceElemento);
 
-        
+
         if (star.classList[0] == "fas") {
             for(let index = indiceElemento; index < fila.length; index++){
                 const el = fila[index];
@@ -131,7 +131,7 @@ stars.forEach(function(star){
                     let c2 = el.classList[1];
                     el.classList.remove(c1,c2);
                     el.classList.add("far","fa-star");
-                }   
+                }
             }
         }else if(star.classList[0] == "far"){
             for(let index = indiceElemento; index>0; index--){
@@ -158,7 +158,7 @@ stars.forEach(function(star){
         }
         star.classList.add("fa-star-half");
         */
-        //Creo que solo era neceasrio elimina la clasList[1] y añadir la fa-star-half 
+        //Creo que solo era neceasrio elimina la clasList[1] y añadir la fa-star-half
     });
 
     star.addEventListener("mouseleave",function(){
@@ -218,21 +218,3 @@ let Elemento = function(indBuscar){
     });
     return elementoR;
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
